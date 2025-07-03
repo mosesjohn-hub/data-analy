@@ -2,7 +2,7 @@ import cv2
 
 
 face_haar_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
-image=cv2.imread("Human_faces.jpg")
+image=cv2.imread("Human faces.jpg")
 gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 cv2.imshow("GRAY",gray)
 faces=face_haar_cascade.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=4)
